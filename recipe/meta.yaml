@@ -26,6 +26,7 @@ requirements:
   run:
     - python >=3.8
     - async_retriever
+    - beautifulsoup4
     - cftime
     - cltoolbox
     - dapclient
@@ -35,13 +36,12 @@ requirements:
     - isodate
     - lxml
     - mechanize
-    - pydantic
     - pydaymet
+    - python-dateutil
     - requests
     - siphon
     - suds-community
     - toolbox_utils >=5.0.0,<6.0.0
-    - zeep
 
 test:
   imports:
