@@ -32,15 +32,18 @@ requirements:
     - dapclient
     - geojson
     - haversine
-    - httpretty
     - isodate
     - lxml
     - mechanize
+    - numpy
+    - pandas
     - pydaymet
+    - pytables
     - python-dateutil
     - requests
     - siphon
     - suds-community
+    - tabulate
     - toolbox_utils >=5.0.0,<6.0.0
 
 test:
