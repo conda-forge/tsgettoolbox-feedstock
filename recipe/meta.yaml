@@ -1,5 +1,5 @@
 {% set name = "tsgettoolbox" %}
-{% set version = "25.1.8" %}
+{% set version = "25.1.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsgettoolbox-{{ version }}.tar.gz
-  sha256: be4e223b86a8be7cc611c21f896e10bddd126facc8150eee7ff9cdcaf6054ce3
+  sha256: 2e0c5346c805988be44001dd64e8e11f1f1761646afd82a3326d0a45fbda7594
 
 build:
   entry_points:
