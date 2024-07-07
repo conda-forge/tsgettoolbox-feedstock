@@ -39,12 +39,13 @@ requirements:
     - matplotlib-base >=3.3.2
     - mechanize
     - numpy
-    - pandas
     - openpyxl >=3.0.7
     - odfpy >=1.4.1
+    - pandas
     - pint !=0.21
     - pint-pandas
     - pydantic
+    - pyogrio
     - pytables >=3.6.1
     - pydaymet
     - python-calamine
