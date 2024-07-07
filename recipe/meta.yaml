@@ -30,18 +30,34 @@ requirements:
     - cftime
     - cltoolbox
     - dapclient
+    - dateparser
     - geojson
     - haversine
     - httpretty
     - isodate
     - lxml
+    - matplotlib-base >=3.3.2
     - mechanize
+    - numpy
+    - pandas
+    - openpyxl >=3.0.7
+    - odfpy >=1.4.1
+    - pint !=0.21
+    - pint-pandas
+    - pydantic
+    - pytables >=3.6.1
     - pydaymet
+    - python-calamine
     - python-dateutil
+    - pyxlsb >=1.0.8
     - requests
+    - scipy
     - siphon
     - suds-community
-    - toolbox_utils >=5.0.0,<6.0.0
+    - tabulate    
+    - typing-extensions
+    - xlrd >=2.0.1
+    - xlsxwriter
 
 test:
   imports:
