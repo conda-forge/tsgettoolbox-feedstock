@@ -1,5 +1,5 @@
 {% set name = "tsgettoolbox" %}
-{% set version = "25.1.10" %}
+{% set version = "25.1.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/tsgettoolbox-{{ version }}.tar.gz
-  sha256: 2df5af7ed4ae23c50a939b0b19ed4f26fa73c7781c231b483e871e98d2cb344d
+  sha256: 13424111c1e0c69a8ee36ca3fe6aead4056a5014bad90bba3a8f1532520d769b
 
 build:
   entry_points:
@@ -30,18 +30,35 @@ requirements:
     - cftime
     - cltoolbox
     - dapclient
+    - dateparser
     - geojson
     - haversine
     - httpretty
     - isodate
     - lxml
+    - matplotlib-base >=3.3.2
     - mechanize
+    - numpy
+    - openpyxl >=3.0.7
+    - odfpy >=1.4.1
+    - pandas
+    - pint !=0.21
+    - pint-pandas
+    - pydantic
+    - pyogrio
+    - pytables >=3.6.1
     - pydaymet
+    - python-calamine
     - python-dateutil
+    - pyxlsb >=1.0.8
     - requests
+    - scipy
     - siphon
     - suds-community
-    - toolbox_utils >=5.0.0,<6.0.0
+    - tabulate    
+    - typing-extensions
+    - xlrd >=2.0.1
+    - xlsxwriter
 
 test:
   imports:
