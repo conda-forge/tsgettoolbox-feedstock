@@ -26,7 +26,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - async_retriever
+    - async_retriever <0.18
     - beautifulsoup4
     - cftime
     - cltoolbox
