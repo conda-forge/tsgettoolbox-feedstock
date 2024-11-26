@@ -52,6 +52,7 @@ requirements:
     - python-calamine
     - python-dateutil
     - pyxlsb >=1.0.8
+    - rasterio
     - requests
     - scipy
     - siphon
