@@ -32,11 +32,11 @@ requirements:
     - cltoolbox
     - dapclient
     - dateparser
-    - gdal
     - geojson
     - haversine
     - httpretty
     - isodate
+    - libgdal
     - lxml
     - matplotlib-base >=3.3.2
     - mechanize
