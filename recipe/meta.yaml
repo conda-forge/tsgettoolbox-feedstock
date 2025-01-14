@@ -47,7 +47,7 @@ requirements:
     - pydantic
     - pyogrio
     - pytables >=3.6.1
-    - pydaymet
+    - pydaymet <0.18
     - python-calamine
     - python-dateutil
     - pyxlsb >=1.0.8
