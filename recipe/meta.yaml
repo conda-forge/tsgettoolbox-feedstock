@@ -1,5 +1,5 @@
 {% set name = "tsgettoolbox" %}
-{% set version = "25.1.11" %}
+{% set version = "25.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tsgettoolbox-{{ version }}.tar.gz
-  sha256: 13424111c1e0c69a8ee36ca3fe6aead4056a5014bad90bba3a8f1532520d769b
+  sha256: 8d93065bdee217b90545440b7ad2d872127e296d41465833b222bb051c3c0545
 
 build:
   entry_points:
@@ -47,7 +47,7 @@ requirements:
     - pydantic
     - pyogrio
     - pytables >=3.6.1
-    - pydaymet
+    - pydaymet >=0.17
     - python-calamine
     - python-dateutil
     - pyxlsb >=1.0.8
@@ -55,7 +55,7 @@ requirements:
     - scipy
     - siphon
     - suds-community
-    - tabulate    
+    - tabulate
     - typing-extensions
     - xlrd >=2.0.1
     - xlsxwriter
