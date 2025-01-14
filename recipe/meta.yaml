@@ -14,7 +14,7 @@ build:
     - tsgettoolbox = tsgettoolbox.tsgettoolbox:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -47,7 +47,7 @@ requirements:
     - pydantic
     - pyogrio
     - pytables >=3.6.1
-    - pydaymet <0.18
+    - pydaymet >=0.17
     - python-calamine
     - python-dateutil
     - pyxlsb >=1.0.8
