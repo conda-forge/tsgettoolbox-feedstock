@@ -1,5 +1,5 @@
 {% set name = "tsgettoolbox" %}
-{% set version = "25.1.12" %}
+{% set version = "25.2.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tsgettoolbox-{{ version }}.tar.gz
-  sha256: 8d93065bdee217b90545440b7ad2d872127e296d41465833b222bb051c3c0545
+  sha256: c54249b21398080ef125bf6a0a29c87fa9e964b272adbba79297dd8629e891df
 
 build:
   entry_points:
     - tsgettoolbox = tsgettoolbox.tsgettoolbox:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -29,13 +29,13 @@ requirements:
     - beautifulsoup4
     - cftime
     - cltoolbox
-    - dapclient
     - dateparser
     - geojson
     - haversine
     - httpretty
     - isodate
     - lxml
+    - jinja2
     - matplotlib-base >=3.3.2
     - mechanize
     - numpy
@@ -45,6 +45,7 @@ requirements:
     - pint !=0.21
     - pint-pandas
     - pydantic
+    - pydap
     - pyogrio
     - pytables >=3.6.1
     - pydaymet >=0.17
