@@ -29,13 +29,13 @@ requirements:
     - beautifulsoup4
     - cftime
     - cltoolbox
-    - dapclient
     - dateparser
     - geojson
     - haversine
     - httpretty
     - isodate
     - lxml
+    - jinja2
     - matplotlib-base >=3.3.2
     - mechanize
     - numpy
@@ -45,6 +45,7 @@ requirements:
     - pint !=0.21
     - pint-pandas
     - pydantic
+    - pydap
     - pyogrio
     - pytables >=3.6.1
     - pydaymet >=0.17
