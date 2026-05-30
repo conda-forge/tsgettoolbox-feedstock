@@ -25,6 +25,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - aiodns >3.6.0
     - async_retriever
     - beautifulsoup4
     - cftime
