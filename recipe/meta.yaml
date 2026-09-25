@@ -25,31 +25,33 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - aiodns >=3.5.0
     - async_retriever
     - beautifulsoup4
     - cftime
-    - cltoolbox
+    - cltoolbox >=4.0.4
     - dateparser
+    - deprecated
     - geojson
     - haversine
     - httpretty
     - isodate
-    - lxml
     - jinja2
+    - lxml
     - matplotlib-base >=3.3.2
     - mechanize
     - numpy
     - openpyxl >=3.0.7
     - odfpy >=1.4.1
+    - packaging
     - pandas
-    - pint !=0.21
+    - pint
     - pint-pandas
-    - pydantic
+    - platformdirs
+    - pydantic >=2
     - pydap
     - pyogrio
     - pytables >=3.6.1
-    - pydaymet >=0.17
-    - python-calamine
     - python-dateutil
     - pyxlsb >=1.0.8
     - requests
