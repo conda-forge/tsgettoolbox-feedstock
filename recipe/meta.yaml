@@ -1,13 +1,13 @@
 {% set name = "tsgettoolbox" %}
-{% set version = "26.2.7" %}
+{% set version = "26.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tsgettoolbox-{{ version }}.tar.gz
-  sha256: 0693979472bd31e520f122797b676e678fbfe3097ef48bccc8526b61ab050e4d
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/tsgettoolbox-{{ version }}.tar.gz
+  sha256: 529e23ec6c51b695b95f8ed27108c3980f3351784dc071b786790fd09c5e991f
 
 build:
   entry_points:
@@ -25,31 +25,33 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
+    - aiodns >=3.5.0
     - async_retriever
     - beautifulsoup4
     - cftime
-    - cltoolbox
+    - cltoolbox >=4.0.4
     - dateparser
+    - deprecated
     - geojson
     - haversine
     - httpretty
     - isodate
-    - lxml
     - jinja2
+    - lxml
     - matplotlib-base >=3.3.2
     - mechanize
     - numpy
     - openpyxl >=3.0.7
     - odfpy >=1.4.1
+    - packaging
     - pandas
-    - pint !=0.21
+    - pint
     - pint-pandas
-    - pydantic
+    - platformdirs
+    - pydantic >=2
     - pydap
     - pyogrio
     - pytables >=3.6.1
-    - pydaymet >=0.17
-    - python-calamine
     - python-dateutil
     - pyxlsb >=1.0.8
     - requests
