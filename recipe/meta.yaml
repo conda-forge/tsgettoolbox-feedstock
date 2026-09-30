@@ -1,5 +1,5 @@
 {% set name = "tsgettoolbox" %}
-{% set version = "26.3.1" %}
+{% set version = "26.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/tsgettoolbox-{{ version }}.tar.gz
-  sha256: 91cbe5b086c59bba91c4fc7a382d5b72a4426de596ef1f251d7ab0c9a6f96865
+  sha256: 0614103f1e4369bc431373e715be719ed3cbcdae3187f2d61b41e0a498bce202
 
 build:
   entry_points:
