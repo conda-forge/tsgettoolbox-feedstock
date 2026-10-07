@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tsgettoolbox
-  version: "26.3.2"
+  version: "26.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 0614103f1e4369bc431373e715be719ed3cbcdae3187f2d61b41e0a498bce202
+  sha256: 3a6826460289bdb569e34034446c57ce8b372a8abd5a4cb2e5b98c5eb6d0485d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps
   python:
