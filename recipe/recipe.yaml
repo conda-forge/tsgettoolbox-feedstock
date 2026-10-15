@@ -27,13 +27,15 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
     - pip
-
   run:
     - python >=${{ python_min }}
+    - aiodns >3.6.0
+    - async-retriever
     - beautifulsoup4
     - cftime
     - cltoolbox >=4.0.4
     - dateparser
+    - deprecated
     - geojson
     - haversine
     - httpretty
@@ -41,6 +43,7 @@ requirements:
     - jinja2
     - lxml
     - matplotlib-base >=3.3.2
+    - mechanize
     - numpy
     - openpyxl >=3.0.7
     - odfpy >=1.4.1
@@ -54,6 +57,7 @@ requirements:
     - requests
     - scipy
     - siphon
+    - suds-community
     - tabulate
     - typing-extensions
     - xlrd >=2.0.1
