@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tsgettoolbox
-  version: "26.4.0"
+  version: "27.1.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 3a6826460289bdb569e34034446c57ce8b372a8abd5a4cb2e5b98c5eb6d0485d
+  sha256: 72e0c17048b7d6c646de849e12fa578f3162f944bd3b1af89187eb15b7cb2de8
 
 build:
   number: 0
@@ -30,14 +30,12 @@ requirements:
   run:
     - python >=${{ python_min }}
     - aiodns >3.6.0
-    - async_retriever
+    - async-retriever
     - beautifulsoup4
     - cftime
     - cltoolbox >=4.0.4
-    - dask-core
     - dateparser
     - deprecated
-    - fsspec
     - geojson
     - haversine
     - httpretty
@@ -49,16 +47,12 @@ requirements:
     - numpy
     - openpyxl >=3.0.7
     - odfpy >=1.4.1
-    - packaging
     - pandas
     - pint
     - pint-pandas
     - platformdirs
     - pydantic >=2
     - pydap
-    - pyogrio
-    - pytables >=3.6.1
-    - python-dateutil
     - pyxlsb >=1.0.8
     - requests
     - scipy
@@ -66,10 +60,8 @@ requirements:
     - suds-community
     - tabulate
     - typing-extensions
-    - xarray
     - xlrd >=2.0.1
     - xlsxwriter
-    - zarr
 
 tests:
   - python:
