@@ -27,17 +27,13 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
     - pip
+
   run:
     - python >=${{ python_min }}
-    - aiodns >3.6.0
-    - async_retriever
     - beautifulsoup4
     - cftime
     - cltoolbox >=4.0.4
-    - dask-core
     - dateparser
-    - deprecated
-    - fsspec
     - geojson
     - haversine
     - httpretty
@@ -45,31 +41,23 @@ requirements:
     - jinja2
     - lxml
     - matplotlib-base >=3.3.2
-    - mechanize
     - numpy
     - openpyxl >=3.0.7
     - odfpy >=1.4.1
-    - packaging
     - pandas
     - pint
     - pint-pandas
     - platformdirs
     - pydantic >=2
     - pydap
-    - pyogrio
-    - pytables >=3.6.1
-    - python-dateutil
     - pyxlsb >=1.0.8
     - requests
     - scipy
     - siphon
-    - suds-community
     - tabulate
     - typing-extensions
-    - xarray
     - xlrd >=2.0.1
     - xlsxwriter
-    - zarr
 
 tests:
   - python:
