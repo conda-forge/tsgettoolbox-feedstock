@@ -1,15 +1,15 @@
 schema_version: 1
 
 context:
-  python_min: 3.10
-  version: 27.1.0
+  name: tsgettoolbox
+  version: "27.1.0"
 
 package:
-  name: tsgettoolbox
+  name: ${{ name }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/t/tsgettoolbox/tsgettoolbox-${{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/${{ name }}/${{ name }}-${{ version }}.tar.gz
   sha256: 72e0c17048b7d6c646de849e12fa578f3162f944bd3b1af89187eb15b7cb2de8
 
 build:
@@ -18,7 +18,7 @@ build:
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
-      - tsgettoolbox = tsgettoolbox.tsgettoolbox:main
+      - ${{ name }} = ${{ name }}.${{ name }}:main
 
 requirements:
   host:
@@ -26,7 +26,7 @@ requirements:
     - setuptools >=80
     - pip
   run:
-    - python >=${{ python_min }}
+    - python >=3.10
     - aiodns >3.6.0
     - async_retriever
     - beautifulsoup4
@@ -63,7 +63,7 @@ requirements:
 tests:
   - python:
       imports:
-        - tsgettoolbox
+        - ${{ name }}
       pip_check: true
       python_version:
         - ${{ python_min }}.*
@@ -74,16 +74,16 @@ tests:
         - python ${{ python_min }}.*
     script:
       - pip check
-      - tsgettoolbox --help
+      - ${{ name }} --help
 
 about:
   summary: Will get time series from different sources on the internet
   license: MIT AND BSD-3-Clause
   license_file:
     - LICENSE.txt
-    - src/tsgettoolbox/toolbox_utils/LICENSE.txt
-    - src/tsgettoolbox/cdo_api_py/LICENSE.txt
-  homepage: https://pypi.org/project/tsgettoolbox/
+    - src/${{ name }}/toolbox_utils/LICENSE.txt
+    - src/${{ name }}/cdo_api_py/LICENSE.txt
+  homepage: https://pypi.org/project/${{ name }}/
 
 extra:
   recipe-maintainers:
