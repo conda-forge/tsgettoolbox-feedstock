@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tsgettoolbox-fe
 
 Home: https://pypi.org/project/tsgettoolbox/
 
-Package license: BSD-3-Clause
+Package license: MIT AND BSD-3-Clause
 
 Summary: Will get time series from different sources on the internet
 
