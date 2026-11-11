@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tsgettoolbox
-  version: "27.1.0"
+  version: "27.1.1"
 
 package:
   name: ${{ name }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 72e0c17048b7d6c646de849e12fa578f3162f944bd3b1af89187eb15b7cb2de8
+  sha256: 7e614379adea6cea0c2f53aa8e21502a2cd551b47c1240488da2b638c21fe15c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
@@ -26,7 +26,7 @@ requirements:
     - setuptools >=80
     - pip
   run:
-    - python >=3.10
+    - python >=${{ python_min }}
     - aiodns >3.6.0
     - async_retriever
     - beautifulsoup4
